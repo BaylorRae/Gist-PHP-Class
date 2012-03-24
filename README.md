@@ -55,7 +55,7 @@ Creates the script tag for embedding gists
 
 ### Return
 
-```
+```html
 <script src="https://gist.github.com/123456.js"></script>
 ```
 
@@ -69,7 +69,7 @@ and display the gist content in
 
 ### Return
 
-```
+```html
 <noscript><pre><code>The source gist</code></pre></noscript>
 ```
 
@@ -80,7 +80,7 @@ in one go
 
 ### Return
 
-```
+```html
 <script src="https://gist.github.com/123456.js"></script>
 <noscript><pre><code>The source gist</code></pre></noscript>
 ```
