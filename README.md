@@ -43,7 +43,7 @@ Prepares the class for adding gists to the page
 	<tr>
 		<td>$cache</td>
 		<td>boolean (optional) (default=true)</td>
-		<td>Cache the gist source in a file and display it in `<noscript>` tags</td>
+		<td>Cache the gist source in a file and display it in `&lt;noscript&gt;` tags</td>
 	</tr>
 </table>
 
