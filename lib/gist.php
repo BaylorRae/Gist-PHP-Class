@@ -82,7 +82,7 @@ class Gist {
      * then display it
      */
     if( $this->source !== null ) {
-      return sprintf('<noscript><pre><code>%s</code></pre></noscript>', $this->source);
+      return sprintf('<noscript><pre><code>%s</code></pre></noscript>', htmlentities($this->source));
     }
   }
 
