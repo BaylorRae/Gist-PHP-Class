@@ -82,7 +82,7 @@ class Gist {
      * then display it
      */
     if( $this->source !== null ) {
-      return sprintf('<noscript><pre><code>%s</code></pre></noscript>', htmlentities($this->source));
+      return sprintf('<noscript><pre><code>%s</code></pre></noscript>', $this->source);
     }
   }
 
@@ -119,6 +119,10 @@ class Gist {
 
       // if successful then save it
       if( $this->source ) {
+
+        // turn into an html ready source before caching
+        $this->source = htmlentities($this->source);
+
         file_put_contents($this->get_cache_name(), $this->source);
       }
     }
