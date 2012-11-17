@@ -119,6 +119,10 @@ class Gist {
 
       // if successful then save it
       if( $this->source ) {
+
+        // turn into an html ready source before caching
+        $this->source = htmlentities($this->source);
+
         file_put_contents($this->get_cache_name(), $this->source);
       }
     }
