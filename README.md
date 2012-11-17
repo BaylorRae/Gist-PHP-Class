@@ -1,4 +1,4 @@
-# What is the Gist Class
+# What is the Gist Class [![Build Status](https://secure.travis-ci.org/BaylorRae/Gist-PHP-Class.png?branch=master)](https://travis-ci.org/BaylorRae/Gist-PHP-Class)
 The `Gist` class provides an interface for easily
 
 1. Embedding gists
