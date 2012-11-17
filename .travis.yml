@@ -3,4 +3,4 @@ php:
   - 5.4
   - 5.3
 before_script: composer install --dev
-script: phpspec spec
+script: bin/phpspec run spec/GistSpec.php
