@@ -1,7 +1,19 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Gist PHP Example</title>
 
-include 'lib/gist.php';
+<!-- loads a custom theme -->
+<link rel="stylesheet" href="themes/solorized/theme.css" />
 
-$gist = new Gist('1510818', 'search_params.php');
+</head>
+<body>
+	<?php
+		include 'lib/gist.php';
 
-echo $gist->render();
+		$gist = new Gist('1510818', 'search_params.php');
+
+		echo $gist->render();
+	?>
+</body>
+</html>
